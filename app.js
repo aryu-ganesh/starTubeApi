@@ -2,9 +2,10 @@ const express = require('express')
 const app = express();
 const mongoose = require('mongoose')
 require('dotenv').config()
-const userRoute = require('../tube api/routes/user')
-const videoRoute = require('../tube api/routes/video')
-const commentRoute = require('../tube api/routes/comment')
+const userRoute = require('./routes/user')
+const videoRoute = require('./routes/video')
+const commentRoute = require('./routes/comment')
+
 const bodyParser = require('body-parser')
 const fileUpload = require('express-fileupload')
 const cors = require('cors')
